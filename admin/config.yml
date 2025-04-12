@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "content/menu"
+public_folder: "/content/menu"
+
+site_url: https://restaurantlonjamediterranea.netlify.app
+
+collections:
+  - name: "menu"
+    label: "Menú del Restaurante"
+    folder: "content/menu"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Nombre del Plato"
+        name: "title"
+        widget: "string"
+      - label: "Descripción"
+        name: "description"
+        widget: "text"
+      - label: "Precio"
+        name: "price"
+        widget: "string"
+      - label: "Categoría"
+        name: "category"
+        widget: "select"
+        options:
+          - "Entradas"
+          - "Arroces y Pastas"
+          - "Carnes"
+          - "Pescado del Día"
+          - "Mariscos"
+          - "Postres"
+          - "Bebidas"
+          - "Vinos Tintos"
+          - "Vinos Blancos"
+      - label: "Imagen"
+        name: "image"
+        widget: "image"
+        required: false
