@@ -5,7 +5,7 @@ backend:
 media_folder: "content/menu"
 public_folder: "/content/menu"
 
-site_url: https://restaurantlonjamediterranea.netlify.app
+site_url: https://lonjaprueba.netlify.app
 
 collections:
   - name: "menu"
@@ -22,7 +22,7 @@ collections:
         widget: "text"
       - label: "Precio"
         name: "price"
-        widget: "string"
+        widget: "number"  
       - label: "Categoría"
         name: "category"
         widget: "select"
