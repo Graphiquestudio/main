@@ -1,8 +1,6 @@
 backend:
   name: git-gateway
   branch: main
-  identity_url: https://dev-c2cpurjjmav12oqo.auth0.com
-  login: false
 
 media_folder: "content/menu"
 public_folder: "/content/menu"
@@ -10,16 +8,14 @@ public_folder: "/content/menu"
 site_url: https://lonjaprueba.netlify.app
 
 auth:
-  # Configuración para usar Auth0 como proveedor de autenticación OAuth2
   provider: oauth2
-  base_url: https://dev-c2cpurjjmav12oqo.auth0.com
-  client_id: D1nJbnBd4XLvO2kgzIwndAOPrLfbNx0X
+  base_url: https://dev-c2cpurjjmav12oqo.us.auth0.com
   auth_endpoint: /authorize
   token_endpoint: /oauth/token
   userinfo_endpoint: /userinfo
-  logout_endpoint: /v2/logout
   response_type: token
   grant_type: authorization_code
+  client_id: C3qlUlPKFFON1uL8lclQhOjk4nZm9EI4
   scope: openid profile email
   redirect_uri: https://lonjaprueba.netlify.app/admin/
   logout_redirect_uri: https://lonjaprueba.netlify.app/
