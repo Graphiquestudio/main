@@ -5,8 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lonja Mediterránea CMS</title>
     <link rel="icon" href="/favicon.ico" />
+    <script>
+      // Esto evita que CMS se inicialice automáticamente con identity
+      window.CMS_MANUAL_INIT = true;
+    </script>
   </head>
   <body>
     <script src="https://unpkg.com/netlify-cms@^2.10.0/dist/netlify-cms.js"></script>
+    <script>
+      // Inicializa Netlify CMS manualmente con tu config personalizada
+      NetlifyCms.init({
+        config: "/admin/config.yml",
+      });
+    </script>
   </body>
 </html>
