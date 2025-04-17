@@ -19,6 +19,7 @@ auth:
   scope: openid profile email
   redirect_uri: https://lonjaprueba.netlify.app/admin/
   logout_redirect_uri: https://lonjaprueba.netlify.app/
+  connection: Lonjamediterranea
 
 collections:
   - name: "menu"
