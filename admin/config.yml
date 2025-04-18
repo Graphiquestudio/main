@@ -15,11 +15,11 @@ auth:
   userinfo_endpoint: /userinfo
   response_type: token
   grant_type: authorization_code
-  client_id: C3qlUlPKFFON1uL8lclQhOjk4nZm9EI4
+  client_id: IgzMSLBtt0EOldsAmmByGMqIDCb0ex9L
   scope: openid profile email
   redirect_uri: https://lonjaprueba.netlify.app/admin/
   logout_redirect_uri: https://lonjaprueba.netlify.app/
-  connection: Lonjamediterranea
+  connection: lonjamediterranea
 
 collections:
   - name: "menu"
